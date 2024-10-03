@@ -1,94 +1,51 @@
-/* styles.css */
+/* Apply the retro purple theme */
 body {
-  background: linear-gradient(135deg, #20002c, #cbb4d4);
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  /* Clean and modern font */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.container {
+  background-color: #4B0082;
+  /* Retro purple background */
+  color: #FFFFFF;
+  /* White text for readability */
+  font-family: 'Courier New', Courier, monospace;
+  /* Retro font */
   text-align: center;
-  padding: 40px;
-  background: rgba(46, 0, 62, 0.85);
-  border-radius: 20px;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
-  max-width: 500px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: #ff66ff;
-  text-shadow: 4px 4px 0 #20002c;
-  animation: glow 1s infinite alternate;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
-.subtitle {
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #e8d6ff;
-  letter-spacing: 1px;
-}
-
-.button-container {
+p {
+  font-size: 1.2em;
   margin-bottom: 30px;
 }
 
-button {
-  background-color: #ff66ff;
+.button {
+  background-color: #9370DB;
+  /* Lighter retro purple for buttons */
   border: none;
-  color: #2e003e;
+  color: white;
   padding: 15px 32px;
-  font-family: 'Montserrat', cursive;
-  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
   margin: 10px;
   cursor: pointer;
-  transition: all 0.4s ease;
-  border-radius: 10px;
-  box-shadow: 0px 8px 0px #c94ecf, 0px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #ffccff;
-  box-shadow: 0px 4px 0px #c94ecf, 0px 4px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(4px);
+.button:hover {
+  background-color: #7B68EE;
+  /* Change color on hover */
 }
 
-button:active {
-  box-shadow: 0px 2px 0px #c94ecf, 0px 2px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(8px);
-}
-
-#link-container {
-  margin-top: 20px;
-  font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-a {
-  color: #ff66ff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffccff;
-  text-decoration: underline;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #ff66ff, 0 0 20px #ff66ff, 0 0 30px #ff66ff;
-  }
-
-  to {
-    text-shadow: 0 0 20px #ffccff, 0 0 30px #ffccff, 0 0 40px #ffccff;
-  }
+footer {
+  margin-top: 50px;
+  font-size: 0.8em;
 }
